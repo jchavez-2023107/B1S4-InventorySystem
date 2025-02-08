@@ -1,0 +1,785 @@
+{
+	"info": {
+		"_postman_id": "0e32b4fd-8715-445f-8a70-b94e386b2062",
+		"name": "AdoptionSystemB1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37956992"
+	},
+	"item": [
+		{
+			"name": "Animals",
+			"item": [
+				{
+					"name": "getAnimalByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2636/api/animals/67a69c6ccd34a2cff5431fdd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals",
+								"67a69c6ccd34a2cff5431fdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddAnimal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Máximo",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Friendly dog that likes to go to Kinal wednesdays",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Dog",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a63ce9e124295a177f3f02",
+									"description": "ID de usuario existente",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/animals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateAnimal",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name ",
+									"value": "Bellosomo",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Not friendly dog that likes to go to Kinal wednesdays",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a63ce9e124295a177f3f02",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/animals/67a69c6ccd34a2cff5431fdd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals",
+								"67a69c6ccd34a2cff5431fdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAnimal",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2636/api/animals/67a69c6ccd34a2cff5431fdd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals",
+								"67a69c6ccd34a2cff5431fdd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAnimals",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2636/api/animals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"animals"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for animals"
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "getUserByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2636/api/users/67a68b0723b26111b3359e2d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users",
+								"67a68b0723b26111b3359e2d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "aa",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "c",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "aac",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "aac@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa!",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+502 5591-5715",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "ADMIN",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Alejo",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Chávez",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "JP",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "JP@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa!",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "+502 5591-5715",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "ADMIN",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/users/67a69b5c6f21994cd44c77ed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users",
+								"67a69b5c6f21994cd44c77ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2636/api/users/67a69b5c6f21994cd44c77ed",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users",
+								"67a69b5c6f21994cd44c77ed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2636/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Folder for animals"
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "getLoginUnauthorized",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NzlkMjU2MTQ2NmIwYzgyOGU5YTE5OTgiLCJ1c2VybmFtZSI6ImFsZWNoYSIsIm5hbWUiOiJBbGUiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MzgzNTI5NTksImV4cCI6MTczODM2Mzc1OX0.2Q7niMKE1-xilfmoHQ2Spc4F-DMaSAgYs5ODpvcqzB4",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "localhost:2636/api/auth/test",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"auth",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LoginAntiguoInvalidCredentials",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "alecha",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "joel",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "chavez",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "joelchavez",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "joelchavez@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa!",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "5591-5715",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "ADMIN",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "profilePicture",
+									"type": "file",
+									"src": "/C:/Users/Informatica/Pictures/Screenshots/Captura de pantalla 2025-01-30 173127.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserLoggin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userLoggin",
+									"value": "ac",
+									"description": "user o email",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:2636/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointments",
+			"item": [
+				{
+					"name": "AgregarCita",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2OWI1MTZmMjE5OTRjZDQ0Yzc3ZWEiLCJ1c2VybmFtZSI6ImFjIiwibmFtZSI6ImEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzg5NzI0MTYsImV4cCI6MTczODk4MzIxNn0.z2dBY4PxeZYNmMnijrO0vbSNg2zC2gQRFhyONx4zyJI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2024-02-10",
+									"description": "Fecha única para cita",
+									"type": "text"
+								},
+								{
+									"key": "animal",
+									"value": "67a63ce9e124295a177f3f02",
+									"description": "ID existente de animal",
+									"type": "text"
+								},
+								{
+									"key": "client",
+									"value": "67a69b516f21994cd44c77ea",
+									"description": "ID existente de cliente",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "canceled",
+									"description": "estado de la cita",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/appointments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"appointments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCitas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2OWI1MTZmMjE5OTRjZDQ0Yzc3ZWEiLCJ1c2VybmFtZSI6ImFjIiwibmFtZSI6ImEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzg5NzI0MTYsImV4cCI6MTczODk4MzIxNn0.z2dBY4PxeZYNmMnijrO0vbSNg2zC2gQRFhyONx4zyJI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2636/api/appointments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"appointments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCitaById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2OWI1MTZmMjE5OTRjZDQ0Yzc3ZWEiLCJ1c2VybmFtZSI6ImFjIiwibmFtZSI6ImEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzg5NzI0MTYsImV4cCI6MTczODk4MzIxNn0.z2dBY4PxeZYNmMnijrO0vbSNg2zC2gQRFhyONx4zyJI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2636/api/appointments/67a62ecf77b76933f3977528",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"appointments",
+								"67a62ecf77b76933f3977528"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2OWI1MTZmMjE5OTRjZDQ0Yzc3ZWEiLCJ1c2VybmFtZSI6ImFjIiwibmFtZSI6ImEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzg5NzI0MTYsImV4cCI6MTczODk4MzIxNn0.z2dBY4PxeZYNmMnijrO0vbSNg2zC2gQRFhyONx4zyJI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2024-02-11",
+									"description": "Fecha única para cita",
+									"type": "text"
+								},
+								{
+									"key": "animal",
+									"value": "67a62ae4c2778019801f2f03",
+									"description": "ID existente de animal",
+									"type": "text"
+								},
+								{
+									"key": "client",
+									"value": "67a69b516f21994cd44c77ea",
+									"description": "ID existente de cliente",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "pending",
+									"description": "estado de la cita",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/appointments/67a62ecf77b76933f3977528",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"appointments",
+								"67a62ecf77b76933f3977528"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2OWI1MTZmMjE5OTRjZDQ0Yzc3ZWEiLCJ1c2VybmFtZSI6ImFjIiwibmFtZSI6ImEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzg5NzI0MTYsImV4cCI6MTczODk4MzIxNn0.z2dBY4PxeZYNmMnijrO0vbSNg2zC2gQRFhyONx4zyJI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:2636/api/appointments/67a62ecf77b76933f3977528",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"appointments",
+								"67a62ecf77b76933f3977528"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Password",
+			"item": [
+				{
+					"name": "CambiarContraseña",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2OWI1MTZmMjE5OTRjZDQ0Yzc3ZWEiLCJ1c2VybmFtZSI6ImFjIiwibmFtZSI6ImEiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3Mzg5NzI0MTYsImV4cCI6MTczODk4MzIxNn0.z2dBY4PxeZYNmMnijrO0vbSNg2zC2gQRFhyONx4zyJI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "currentPassword",
+									"value": "12345678Aa!",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "12345678Aa!2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:2636/api/users/67a69b516f21994cd44c77ea/password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2636",
+							"path": [
+								"api",
+								"users",
+								"67a69b516f21994cd44c77ea",
+								"password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
